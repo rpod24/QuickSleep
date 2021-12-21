@@ -1,0 +1,17 @@
+name: QuickSleep
+main: io.github.rpod24.QuickSleep.QuickSleep
+version: 1.5.3
+api-version: 1.18
+author: Ryan O'Donnell
+description: "This plugin is a one person sleep plugin, where it will animate the time as the player sleeps for all players."
+commands:
+   QuickSleep:
+      description: These commands allow you to edit the rate and delay of the time increase when sleeping
+      usage: /QuickSleep [setTimeCycle|setTimeDelay] [int] 
+      permission: QuickSleep.quicksleep
+      permission-message: You don't have permission
+   QS:
+      description: These commands allow you to edit the rate and delay of the time increase when sleeping
+      usage: /QS [setTimeCycle|setTimeDelay] [int] 
+      permission: QuickSleep.quicksleep
+      permission-message: You don't have permission
