@@ -35,6 +35,7 @@ public class QuickSleep extends JavaPlugin {
         handler.register("setTimeCycle", new IncreaseTime(vars));
         handler.register("setTimeDelay", new IncreaseDelay(vars));
         handler.register("help", new help(vars));
+        handler.register("", new help(vars));
         this.getCommand("QuickSleep").setExecutor(handler);
         this.getCommand("QuickSleep").setTabCompleter(new tabComplete());
         this.getCommand("QS").setExecutor(handler);

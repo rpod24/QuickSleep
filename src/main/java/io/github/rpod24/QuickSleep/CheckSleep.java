@@ -20,7 +20,7 @@ public class CheckSleep implements Listener {
 	}
 	@EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        Bukkit.broadcastMessage("Welcome to the server!");
+        Bukkit.broadcastMessage(config.getPluginChatColor()+"[QuickSleep] "+ChatColor.RESET+"Welcome "+event.getPlayer().getName()+" to the server!");
     }
 	
 	@EventHandler

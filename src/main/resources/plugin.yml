@@ -1,6 +1,6 @@
 name: QuickSleep
 main: io.github.rpod24.QuickSleep.QuickSleep
-version: 1.5.3
+version: 1.5.4
 api-version: 1.18
 author: Ryan O'Donnell
 description: "This plugin is a one person sleep plugin, where it will animate the time as the player sleeps for all players."
