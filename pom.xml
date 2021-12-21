@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.rpod24</groupId>
   <artifactId>QuickSleep</artifactId>
-  <version>1.5.4</version>
+  <version>1.5.5</version>
   <name>Quick Sleep</name>
   <description>1 person sleep plugin</description>
   <build>

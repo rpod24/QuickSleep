@@ -32,7 +32,7 @@ public class tabComplete implements TabCompleter {
                 return finalList;
             }
             
-            else if(args.length>1) {
+            else if(args.length==2) {
             	if (!args[0].equals("")) {
                     for (String string : mainArguments) {
                     	for (int i = 0; i < string.length(); i++) {

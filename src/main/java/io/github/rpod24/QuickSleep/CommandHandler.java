@@ -1,5 +1,6 @@
 package io.github.rpod24.QuickSleep;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -8,6 +9,7 @@ import java.util.HashMap;
 
 public class CommandHandler implements CommandExecutor
 {
+	String version = "1.5.5";
     private static HashMap<String, CommandInterface> commands = new HashMap<String, CommandInterface>();
     public void register(String name, CommandInterface cmd) {
         commands.put(name, cmd);
@@ -21,7 +23,7 @@ public class CommandHandler implements CommandExecutor
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
             if(args.length == 0) {
-                getExecutor("QuickSleep").onCommand(sender, cmd, commandLabel, args);
+            	sender.sendMessage(ChatColor.AQUA+"[QuickSleep] "+ChatColor.RESET+"QuickSleep version "+version+". A one person sleep plugin.");
                 return true;
             }
             if(args.length > 0) {
